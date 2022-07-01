@@ -1,0 +1,349 @@
+* {
+    font-family: 'Trebuchet MS', 'Segoe UI', Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(174.35deg, 
+            rgba(215, 192, 134, 0.7) 15.78%, 
+            rgba(110, 26, 176, 0.56) 60.31%), 
+            url("../img/wallpaper-motech.jpg") no-repeat;
+    background-size: cover;
+}
+
+.dashboard {
+    background: linear-gradient(180deg, rgba(62, 10, 103, 0.9) 54.85%, rgb(41, 2, 70) 100%)
+}
+
+body > .container {
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    background: linear-gradient(180deg, rgba(241, 191, 15, 0.7) 20.83%, rgba(241, 191, 15, 0) 100%)
+}
+
+header > #navbar {
+    display: flex;
+    gap: 7%;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+header > #navbar > i {
+    color: #f1bf0faa;
+    font-size: calc(2vw + 14px);
+}
+
+header > #navbar > i:hover {
+    text-shadow: 0px 0px 3px #f1bf0faa;
+}
+
+#content {
+    padding-top: 18vw;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: calc(1vw + 20px);
+    background-color: #ffffffcc;
+    border-radius: 20px;
+}
+
+article > h2 {
+    width: 100%;
+    padding: 10px 0 60px 0;
+}
+
+#datafast > div {
+    width: 19%;
+}
+
+#datafast > div > h5 {
+    padding: 10px 0;
+    font-size: calc(1vw + 8px);
+}
+
+#datafast > div > span {
+    background: -webkit-linear-gradient(360deg, #6E1AB0, #9d2cf3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(1vw + 4px);
+}
+
+#datafast > div > span > span {
+    background: -webkit-linear-gradient(360deg, #6E1AB0, #9d2cf3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(2vw + 6px);
+}
+
+#financ > div, #invest > div, #integ > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 32%;
+}
+
+#financ > div > span, #invest > div > span, #integ > div > span {
+    font-size: calc(1vw + 6px);
+}
+
+#financ > div > img, #invest > div > img, #integ > div > img {
+    width: 30%;
+}
+
+/* Autenticacao e Cadastro */
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(40vh - 60px);
+    margin: 30px 0;
+    padding: 0;
+}
+
+#banner > img, header > img {
+    width: auto;
+    height: 12vw;
+}
+
+#banner > h1 {
+    width: 74%;
+    color: #ffffff;
+    font-size: 6vw;
+    font-weight: bold;
+    line-height: 12vw;
+}
+
+#customer-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: calc(60vh - 60px);
+    min-height: 300px;
+    padding: 30px 0;
+    margin: 0;
+}
+
+#customer-fields > h1 {
+    width: 100%;
+    color: #ffffff;
+    font-size: calc(3vw + 14px);
+    font-weight: bold;
+}
+
+#customer-fields > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+}
+
+button.btn-default {
+    width: 100%;
+    max-width: 500px;
+    padding: 16px 20px;
+    margin: 10px 0;
+    color: #ffffff;
+    background-color: #6E1AB0CC;
+    font-size: calc(1vw + 12px);
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+}
+
+button.btn-default:hover {
+    text-shadow: 0px 0px 2px #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+}
+
+button.btn-text {
+    width: 100%;
+    max-width: 300px;
+    padding: 16px 20px;
+    margin: 10px 0;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: calc(1vw + 12px);
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    border-radius: 12px;
+}
+
+button.btn-text:hover {
+    text-shadow: 0px 0px 3px #ffffff;
+    text-decoration: underline;
+}
+
+form .form-control {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px 14px;
+    margin: 10px 0;
+}
+
+form .form-label {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+form .form-check-label {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+form .form-control:focus, form .form-label:focus {
+    border-color: #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+}
+
+form .form-check-input:focus {
+    border-color: transparent;
+    box-shadow: 0px 0px 12px #ffffff;
+}
+
+.form-check-input:checked {
+    background: #6E1AB0CC;
+    border-color: #6E1AB0;
+    box-shadow: 0px 0px 12px #ffffff;
+}
+
+@media only screen and (min-width: 1300px) {
+
+    header > #navbar > i {
+        font-size: 50px;
+    }
+
+    #content {
+        padding-top: 180px;
+    }
+
+    #banner > img, header > img {
+        height: 120px;
+    }
+    
+    #banner > h1 {
+        font-size: 70px;
+        line-height: 120px;
+    }
+    
+    #customer-fields > h1 {
+        font-size: 48px;
+    }
+
+    button.btn-default {
+        font-size: 22px;
+    }
+
+    button.btn-text {
+        font-size: 18px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+
+    #financ > div > span, #invest > div > span, #integ > div > span {
+        font-size: 26px;
+    }
+    
+    #financ > div > img, #invest > div > img, #integ > div > img {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #content {
+        padding-top: 120px;
+    }
+
+    #datafast > div {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #datafast > div > h5 {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    #datafast > div > span {
+        font-size: 26px;
+    }
+    
+    #datafast > div > span > span {
+        font-size: 48px;
+    }
+
+    #financ > div > span, #invest > div > span, #integ > div > span {
+        font-size: 20px;
+    }
+    
+    #financ > div > img, #invest > div > img, #integ > div > img {
+        width: 50%;
+    }
+
+    header > #navbar > i {
+        font-size: 30px;
+    }
+
+    #banner > img, header > img {
+        height: 80px;
+    }
+    
+    #banner > h1 {
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    button.btn-default, button.btn-text {
+        max-width: inherit;
+        align-self: center;
+        text-align: center;
+    }
+    
+}
